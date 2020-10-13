@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun with frogs</title>
+<link rel="icon" href="icon.ico">
+<script>
+function myFunction() {
+	
+	var computerChoice = Math.random();
+
+	if (computerChoice <= 0.25) 
+	{
+		var image = "img1";
+		document.getElementById("myImg").src = "header.gif";
+	}
+	else if (computerChoice > 0.25 && computerChoice <= 0.50)
+	{
+		var image = "img2";
+		document.getElementById("myImg").src = "header2.gif";
+	}
+	else if (computerChoice > 0.50 && computerChoice <= 0.75)
+	{
+		var image = "img3";
+		document.getElementById("myImg").src = "header3.gif";
+	}
+	else
+	{
+		var image = "img4";
+		document.getElementById("myImg").src = "header4.gif";
+	}
+}
+
+function twton()	{
+	document.getElementById("twtbutton").src = "button1.gif";
+}
+
+function twtoff()	{
+	document.getElementById("twtbutton").src = "button1.png";
+}
+
+function yton()	{
+	document.getElementById("ytbutton").src = "button_2.gif";
+}
+
+function ytoff()	{
+	document.getElementById("ytbutton").src = "button_2.png";
+}
+function exton()	{
+	document.getElementById("extbutton").src = "button3.gif";
+}
+
+function extoff()	{
+	document.getElementById("extbutton").src = "button3.png";
+}
+</script>
+<style>
+body {
+	background-color: #D0FFB4;
+	background-image: url("iconss.png");
+	opacity: 1;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1	{
+  text-align: center;
+  color: #F79691;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 70%;
+  background-color: #6AAB72;
+  opacity: 1;
+  background-image: url("bg3.gif");
+}
+div	{
+  text-align: center;
+  color: #F79691;
+  margin: auto;
+  width: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #6AAB72;
+  opacity: 1;
+  background-image: url("bg3.gif");
+}		
+img.post	{
+  margin-top: 10px;
+  opacity: 1.0;
+  background-color: white;
+  height: 30%;
+  width: 30%;
+}
+img	{
+  margin-top: 10px;
+  opacity: 1.0;
+  background-color: white;
+}
+img.resize	{
+  max-width:30%;
+  max-height:30%;
+}
+
+p.thing	{
+  opacity: 1.0;
+  margin-top: 0px;
+  background-color: #36783E;
+}
+h2	{
+  opacity: 1.0;
+  margin-top: 0px;
+  background-color: #36783E;
+}
+p	{
+  opacity: 1.0;
+  font-size:20px;
+  margin-bottom: 5px;
+  color: #F79691;
+  background-color: #56985E;
+}
+
+</style>
+</head>
+<body onload="myFunction()">
+<h1><img src="" id="myImg">
+<p class="thing" ><a href=""><img class="twtbutton" onmouseover="twton()" onmouseout="twtoff()" id="twtbutton" src="button1.png"></a> <a href=""><img src="button_2.png" id="ytbutton" onmouseover="yton()" onmouseout="ytoff()"></a></a></p>
+</h1>
+<div>
+<h2>08/10/2020 21:56</h2>
+<img class="post" src="">
+<p>Frogfrogfrog	</p>
+</div>
+</body>
+</html>
